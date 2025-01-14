@@ -3,34 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario</title>
+    <title>Manual de Usuario AgroSpectro</title>
     <style>
         /* Estilos generales */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #13322B;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #D4C19C;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Encabezado y navegación */
+        /* Encabezado del Gobierno de México */
+        .gov-header {
+            background-color: hsl(176, 75%, 8%);
+            padding: 0.5rem;
+            text-align: left; /* Alineación del logo a la izquierda */
+            display: flex;
+            align-items: center; /* Alineación vertical del logo */
+        }
+
+        .gov-header img {
+            max-height: 50px;
+            margin-left: 1rem; /* Margen para separar el logo del borde */
+        }
+
+        /* Encabezado y navegación principal */
         header {
-            background-color: #285C4D;
+            background-color: hwb(176 5% 79%);
             padding: 1rem;
             position: sticky;
             top: 0;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav {
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             display: flex;
+            margin: 0;
+            width: 100%;
             justify-content: space-around;
-            flex-wrap: wrap;
         }
 
         nav ul li a {
@@ -87,7 +109,7 @@
         .btn {
             display: block;
             width: 200px;
-            background-color: #285C4D;
+            background-color: #003D3A;
             color: #D4C19C;
             padding: 0.5rem 1rem;
             border-radius: 5px;
@@ -123,20 +145,28 @@
     </style>
 </head>
 <body>
+    <div class="gov-header">
+        <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="Gobierno de México">
+    </div>
+
     <header>
         <nav>
             <ul>
                 <li><a href="#introduccion">Introducción</a></li>
                 <li><a href="#interfaz">Interfaz</a></li>
-                <li><a href="#acceso">información</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="introduccion">
-            <h1>Manual de Usuario del Geoportal</h1>
-            <p>Este manual está diseñado para guiarte paso a paso en el uso de la plataforma. Sigue estas instrucciones para aprovechar al máximo todas sus funciones..</p>
+            <h1>Manual de Usuario del Geoportal AgroSpectro</h1>
+            <p>Este manual está diseñado para guiarte paso a paso en el uso de la plataforma. Sigue estas instrucciones para aprovechar al máximo todas sus funciones.</p>
+        </section>
+
+        <section>
+            <p>A continuación, se detalla el contenido para cada sección de la interfaz y funcionalidades del geoportal:</p>
         </section>
 
         <section id="interfaz">
@@ -145,26 +175,26 @@
             
             <h3>1. Herramienta de trazado de polígonos</h3>
             <p>Con esta herramienta puedes dibujar un polígono que marque tu área de interés en el mapa.</p>
-            <img src="../html/ayuda/1ayuda.jpg" alt="Herramienta de trazado de polígonos" class="imagen-ejemplo">
+            <img src="html/ayuda/imagen01.jpg" alt="Herramienta de trazado de polígonos" class="imagen-ejemplo">
 
             <h3>2. Selección del área de interés</h3>
             <p>Después de habilitar la herramienta de trazado, elige la opción indicada en un recuadro rojo. Esto te permitirá comenzar a definir el área exacta que quieres analizar.</p>
-            <img src="../html/ayuda/2 recorte.PNG" alt="Selección del área de interés" class="imagen-ejemplo imagen-grande">
+            <img src="html/ayuda/imagen02.png" alt="Selección del área de interés" class="imagen-ejemplo">
 
             <h3>3. Ingreso de fechas</h3>
             <p>Luego de seleccionar el área, ingresa la fecha de inicio y final del periodo que deseas analizar. Usa el formato "AAAA-MM-DD" para asegurarte de que el sistema lo reconozca correctamente.</p>
-            <img src="../html/ayuda/3_recorte.PNG" alt="Ingreso de fechas" class="imagen-ejemplo">
+            <img src="html/ayuda/imagen03.png" alt="Ingreso de fechas" class="imagen-ejemplo">
             
             <p>A continuación, te mostramos un ejemplo de cómo ingresar las fechas correctamente en el formato requerido (YYYY-MM-DD).</p>
-            <img src="../html/ayuda/4_recorte.PNG" alt="Ejemplo de ingreso de fechas" class="imagen-ejemplo">
+            <img src="html/ayuda/imagen04.png" alt="Ejemplo de ingreso de fechas" class="imagen-ejemplo">
 
             <h3>4. Selección del tipo de índice</h3>
             <p>El siguiente paso es elegir el tipo de índice que utilizarás en tu análisis. Puedes optar por índices normalizados o no normalizados, dependiendo la necesidad.</p>
-            <img src="../html/ayuda/5_recorte.png" alt="Selección del tipo de índice" class="imagen-ejemplo imagen-grande">
+            <img src="html/ayuda/imagen05.png" alt="Selección del tipo de índice" class="imagen-ejemplo">
 
             <h3>5. Procesamiento de datos</h3>
             <p>Una vez que todo esté listo, haz clic en el botón "Procesar". El sistema comenzará a analizar el área y las fechas que seleccionaste y te mostrará los resultados.</p>
-            <img src="../html/ayuda/6_recorte.PNG" alt="Botón de procesamiento" class="imagen-ejemplo">
+            <img src="html/ayuda/imagen06.png" alt="Botón de procesamiento" class="imagen-ejemplo">
         </section>
 
         <section id="contacto">
@@ -172,13 +202,14 @@
             <p>Si necesitas ayuda adicional, no dudes en contactarnos:</p>
             <ul>
                 <li>Email: soporte@tugeoportal.com</li>
-                <li>Teléfono: +1234567890</li>
+                <li>Teléfono: +1 234 567 890</li>
+                <li>Dirección: Calle Ejemplo 123, Ciudad, País</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 . Todos los derechos reservados.</p>
+        <p>&copy; 2024 AgroSpectro. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
